@@ -1,0 +1,102 @@
+id,name
+2,FIPS
+4,Estimate;Total;Total
+5,Margins of Error;Total;Total
+6,Estimate;Moved within same county;Total
+7,Margins of Error;Moved within same county;Total
+8,"Estimate;Moved from different county, same state;Total"
+9,"Margins of Error;Moved from different county, same state;Total"
+10,Estimate;Moved from different state;Total
+11,Margins of Error;Moved from different state;Total
+12,Estimate;Moved from abroad;Total
+13,Margins of Error;Moved from abroad;Total
+144,Estimate;Total;White Alone
+145,Margins of Error;Total;White Alone
+146,Estimate;Moved within same county;White Alone
+147,Margins of Error;Moved within same county;White Alone
+148,"Estimate;Moved from different county, same state;White Alone"
+149,"Margins of Error;Moved from different county, same state;White Alone"
+150,Estimate;Moved from different state;White Alone
+151,Margins of Error;Moved from different state;White Alone
+152,Estimate;Moved from abroad;White Alone
+153,Margins of Error;Moved from abroad;White Alone
+154,Estimate;Total;Black or African American
+155,Margins of Error;Total;Black or African American
+156,Estimate;Moved within same county;Black or African American
+157,Margins of Error;Moved within same county;Black or African American
+158,"Estimate;Moved from different county, same state;Black or African American"
+159,"Margins of Error;Moved from different county, same state;Black or African American"
+160,Estimate;Moved from different state;Black or African American
+161,Margins of Error;Moved from different state;Black or African American
+162,Estimate;Moved from abroad;Black or African American
+163,Margins of Error;Moved from abroad;Black or African American
+164,Estimate;Total;American Indian and Alaska Native
+165,Margins of Error;Total;American Indian and Alaska Native
+166,Estimate;Moved within same county;American Indian and Alaska Native
+167,Margins of Error;Moved within same county;American Indian and Alaska Native
+168,"Estimate;Moved from different county, same state;American Indian and Alaska Native"
+169,"Margins of Error;Moved from different county, same state;American Indian and Alaska Native"
+170,Estimate;Moved from different state;American Indian and Alaska Native
+171,Margins of Error;Moved from different state;American Indian and Alaska Native
+172,Estimate;Moved from abroad;American Indian and Alaska Native
+173,Margins of Error;Moved from abroad;American Indian and Alaska Native
+174,Estimate;Total;Asian
+175,Margins of Error;Total;Asian
+176,Estimate;Moved within same county;Asian
+177,Margins of Error;Moved within same county;Asian
+178,"Estimate;Moved from different county, same state;Asian"
+179,"Margins of Error;Moved from different county, same state;Asian"
+180,Estimate;Moved from different state;Asian
+181,Margins of Error;Moved from different state;Asian
+182,Estimate;Moved from abroad;Asian
+183,Margins of Error;Moved from abroad;Asian
+184,Estimate;Total;Native Hawaiian and Other Pacific Islander
+185,Margins of Error;Total;Native Hawaiian and Other Pacific Islander
+186,Estimate;Moved within same county;Native Hawaiian and Other Pacific Islander
+187,Margins of Error;Moved within same county;Native Hawaiian and Other Pacific Islander
+188,"Estimate;Moved from different county, same state;Native Hawaiian and Other Pacific Islander"
+189,"Margins of Error;Moved from different county, same state;Native Hawaiian and Other Pacific Islander"
+190,Estimate;Moved from different state;Native Hawaiian and Other Pacific Islander
+191,Margins of Error;Moved from different state;Native Hawaiian and Other Pacific Islander
+192,Estimate;Moved from abroad;Native Hawaiian and Other Pacific Islander
+193,Margins of Error;Moved from abroad;Native Hawaiian and Other Pacific Islander
+194,Estimate;Total;Some other race
+195,Margins of Error;Total;Some other race
+196,Estimate;Moved within same county;Some other race
+197,Margins of Error;Moved within same county;Some other race
+198,"Estimate;Moved from different county, same state;Some other race"
+199,"Margins of Error;Moved from different county, same state;Some other race"
+200,Estimate;Moved from different state;Some other race
+201,Margins of Error;Moved from different state;Some other race
+202,Estimate;Moved from abroad;Some other race
+203,Margins of Error;Moved from abroad;Some other race
+204,Estimate;Total;Two or more races
+205,Margins of Error;Total;Two or more races
+206,Estimate;Moved within same county;Two or more races
+207,Margins of Error;Moved within same county;Two or more races
+208,"Estimate;Moved from different county, same state;Two or more races"
+209,"Margins of Error;Moved from different county, same state;Two or more races"
+210,Estimate;Moved from different state;Two or more races
+211,Margins of Error;Moved from different state;Two or more races
+212,Estimate;Moved from abroad;Two or more races
+213,Margins of Error;Moved from abroad;Two or more races
+214,Estimate;Total;Hispanic or Latino
+215,Margins of Error;Total;Hispanic or Latino
+216,Estimate;Moved within same county;Hispanic or Latino
+217,Margins of Error;Moved within same county;Hispanic or Latino
+218,"Estimate;Moved from different county, same state;Hispanic or Latino"
+219,"Margins of Error;Moved from different county, same state;Hispanic or Latino"
+220,Estimate;Moved from different state;Hispanic or Latino
+221,Margins of Error;Moved from different state;Hispanic or Latino
+222,Estimate;Moved from abroad;Hispanic or Latino
+223,Margins of Error;Moved from abroad;Hispanic or Latino
+224,"Estimate;Total;White alone, not Hispanic or Latino"
+225,"Margins of Error;Total;White alone, not Hispanic or Latino"
+226,"Estimate;Moved within same county;White alone, not Hispanic or Latino"
+227,"Margins of Error;Moved within same county;White alone, not Hispanic or Latino"
+228,"Estimate;Moved from different county, same state;White alone, not Hispanic or Latino"
+229,"Margins of Error;Moved from different county, same state;White alone, not Hispanic or Latino"
+230,"Estimate;Moved from different state;White alone, not Hispanic or Latino"
+231,"Margins of Error;Moved from different state;White alone, not Hispanic or Latino"
+232,"Estimate;Moved from abroad;White alone, not Hispanic or Latino"
+233,"Margins of Error;Moved from abroad;White alone, not Hispanic or Latino"

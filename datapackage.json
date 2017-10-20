@@ -1,0 +1,347 @@
+{
+  "name": "residential-mobility-by-race-and-ethnicity",
+  "datapackage_version": "1.0-beta.18",
+  "title": "Residential Mobility by Race and Ethnicity",
+  "description": "Residential Mobility by Race and Ethnicity reports the number and proportion of people who changed their place of residence in the past 12 months.",
+  "version": "1.0",
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [{
+    "name": "uscensus",
+    "web": ""
+  }],
+  "author":[{
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
+    "web": "http://ctdata.org"
+  }],
+  "contributor": [],
+  "resources": [{
+    "path": "data/residential_mobility_by_race_2015.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "Town",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "FIPS",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Year",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Race/Ethnicity",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+            "enum": [
+              "American Indian And Alaska Native", 
+              "Asian", 
+              "Black Or African American", 
+              "Hispanic Or Latino", 
+              "Native Hawaiian And Other Pacific Islander", 
+              "Some Other Race", 
+              "Total", 
+              "Two Or More Races", 
+              "White Alone", 
+              "White Alone, Not Hispanic Or Latino"
+            ]
+          }     
+        }, {
+          "name": "Mobility",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+            "enum": [
+              "Moved from abroad",
+              "Moved from different county, same state", 
+              "Moved from different state", 
+              "Moved within same county"
+            ]
+          }     
+        }, {          
+          "name": "Measure Type",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+            "enum": [
+              "Number", 
+              "Percent"
+            ]
+          }     
+        }, {
+          "name": "Variable",
+          "type": "string",
+          "dimension": true, 
+          "constraints": {
+            "enum": [
+              "Residential Mobility", 
+              "Margins of Error"
+            ]
+          }     
+        }, {
+          "name": "Value",
+          "type": "number",
+          "dimension": false
+        }]
+      }
+    }
+  ],
+  "last_modified": "10/19/2017",
+  "ckan_extras": {
+    "full_description": {
+      "ckan_name": "Full Description",
+      "value": "This dataset provides the estimates of the population over 1 year of age whose place of residence changed within 12 months prior to the survey, disaggregated by race/ethnicity. Proportion data are also provided for each given race/ethnicity subgroup. Beginning in 2000, individuals were presented with the option to select one or more races. In addition, the Census asked individuals to identify their race separately from identifying their Hispanic origin. The Census has published individual tables for the races and ethnicities provided as supplemental information to the main table that does not dissaggregate by race or ethnicity. Race categories include White, Black or African American, American Indian or Alaska Native, Asian, Native Hawaiian or Other Pacific Islander, Some other race, and Two or more races. We are not including specific combinations of two or more races as the counts of these combinations are small. Ethnic categories include Hispanic or Latino and White Non-Hispanic. Values for total race/ethnicity are also provided. This data originates from the American Community Survey 5-Year estimates, summary table S0701.",
+      "type": "string"
+    },
+    "suppression": {
+      "ckan_name": "Suppression",
+      "value": "Entries with either no sample observations or too few sample observations available to compute either an estimate or a margin of error have been suppressed.",
+      "type": "string"
+    },
+    "technical_notes": {
+      "ckan_name": "Technical Notes",
+      "value": "The percentages of each race/ethnicity sub-group are given with a Margin of Error present in the Census data. Therefore, the derived estimates of each race/ethnicity sub-group also given with a Margin of Error.",
+      "type": "string"
+    },
+    "socrata": {
+      "ckan_name": "Socrata",
+      "value": "False",
+      "type": "string"
+    },
+    "socrata_url": {
+      "ckan_name": "Socrata Dataset URL",
+      "value": "",
+      "type": "string"
+    },
+    "socrata_dataset_name": {
+      "ckan_name": "Socrata Dataset Name",
+      "value": "",
+      "type": "string"
+    }, 
+    "domain": {
+      "ckan_name": "Domain",
+      "value": "Housing",
+      "type": "string"
+    },
+    "subdomain": {
+      "ckan_name": "Subdomain",
+      "value": "Residential Mobility",
+      "type": "string"
+    },
+    "geography": {
+      "ckan_name": "Geography",
+      "value": "Town",
+      "type": "string",
+      "constraints": {"enum": ["Town", "County", "Town/County", "District", "Other"]}
+    },
+    "frequency": {
+      "ckan_name": "Frequency",
+      "value": "Other",
+      "type": "string"
+    },
+    "years_in_catalog": {
+      "ckan_name": "Years in Catalog",
+      "value": ["2006-2010", "2007-2011", "2008-2012", "2009-2013", "2010-2014", "2011-2015"],
+      "type": "array"
+    },
+    "latest_year": {
+      "ckan_name": "Latest Year Available",
+      "value": "2011-2015",
+      "type": "string"
+    },
+    "disabled_views": {
+      "ckan_name": "Disabled Views",
+      "value": [],
+      "type": "array",
+      "constraints": {"enum": ["map", "table", "bar", "line"]}
+    },
+    "units": {
+      "ckan_name": "Units",
+      "value": {
+        "Number": "",
+        "Percent": "%"
+      }
+    },
+    "expected_number_of_geographies": {
+		  "ckan_name": "Expected Number of Unique Geographies",
+		  "value": 170,
+		  "type": "string"
+		},     
+    "default": {      
+      "ckan_name": "Default",
+			"value": {
+		 		"Town": "Connecticut",
+		 		"Year": ["2011-2015"],
+		 		"Race/Ethnicity": "Total", 
+		 		"Variable": "Residential Mobility"
+			},
+		  	"type": "object"
+    } 
+  },
+  "spot_checks": [
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Ellington",
+        "Race/Ethnicity": "American Indian And Alaska Native",
+        "Year": "2006-2010",
+        "Mobility": "Moved from abroad",
+        "Variable": "Residential Mobility",
+        "Measure Type": "Number" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": -6666
+      } 
+    }, 
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Ansonia",
+        "Race/Ethnicity": "White Alone, Not Hispanic Or Latino",
+        "Year": "2007-2011",
+        "Mobility": "Moved from different county, same state",
+        "Variable": "Margins of Error",
+        "Measure Type": "Number" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": 179
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Plainville",
+        "Race/Ethnicity": "Total",
+        "Year": "2008-2012",
+        "Mobility": "Moved from different state",
+        "Variable": "Margins of Error",
+        "Measure Type": "Number" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": 88
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Derby",
+        "Race/Ethnicity": "Some Other Race",
+        "Year": "2009-2013",
+        "Mobility": "Moved within same county",
+        "Variable": "Margins of Error",
+        "Measure Type": "Percent"  
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 23.9
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Berlin",
+        "Race/Ethnicity": "Hispanic Or Latino",
+        "Year": "2010-2014",
+        "Mobility": "Moved from abroad",
+        "Variable": "Margins of Error",
+        "Measure Type": "Percent"  
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 5.50
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Manchester",
+        "Race/Ethnicity": "Black Or African American",
+        "Year": "2011-2015",
+        "Mobility": "Moved from different county, same state",
+        "Variable": "Residential Mobility",
+        "Measure Type": "Number" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": 53
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Mansfield",
+        "Race/Ethnicity": "White Alone",
+        "Year": "2006-2010",
+        "Mobility": "Moved from different state",
+        "Variable": "Residential Mobility",
+        "Measure Type": "Percent" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 6.20
+      } 
+    },
+    {
+      "type": "$lookup",
+      "filter": {
+        "Town": "Harwinton",
+        "Race/Ethnicity": "Two Or More Races",
+        "Year": "2007-2011",
+        "Mobility": "Moved within same county",
+        "Variable": "Residential Mobility",
+        "Measure Type": "Percent" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 0
+      } 
+    }
+  ],
+	"dimension_groups": [{
+		"Race/Ethnicity": [
+      "American Indian And Alaska Native", 
+      "Asian", 
+      "Black Or African American", 
+      "Hispanic Or Latino", 
+      "Native Hawaiian And Other Pacific Islander", 
+      "Some Other Race", 
+      "Total", 
+      "Two Or More Races", 
+      "White Alone", 
+      "White Alone, Not Hispanic Or Latino"
+		], 
+		"Mobility": [
+			"Moved from abroad",
+      "Moved from different county, same state", 
+      "Moved from different state", 
+      "Moved within same county"
+		], 
+		"Variable": [
+			"Residential Mobility", 
+      "Margins of Error"
+		], 
+		"Measure Type": [
+		  "Number", 
+		  "Percent"
+		]	
+	}]
+}   
