@@ -136,6 +136,16 @@
       "value": "Residential Mobility",
       "type": "string"
     },
+    "numerator": {
+      "ckan_name": "Numerator",
+      "value": "Number of individuals of a given Race/Ethnicity whose place of residence changed in the 12 months prior to the survey.",
+      "type": "string"
+    },
+    "denominator": {
+      "ckan_name": "Denominator",
+      "value": "The total population surveyed for given Race/Ethnicity and geography.",
+      "type": "string"
+    },
     "geography": {
       "ckan_name": "Geography",
       "value": "Town",
