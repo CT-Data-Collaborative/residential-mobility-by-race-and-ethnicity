@@ -172,7 +172,7 @@ dataset <- dataset %>%
 # write to file - new NA value will be "-6666" for values that are incalculable or inestimable
 write.table (
   dataset,
-  file.path(getwd(), "data", "residential_mobility_by_race_2016.csv"),
+  file.path(getwd(), "data", "residential_mobility_by_race_2018.csv"),
   sep = ",",
   row.names = F,
   na = "-6666"
